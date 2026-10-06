@@ -1,0 +1,45 @@
+@reference "tailwindcss";
+
+.container {
+  @apply w-full flex flex-col items-start space-y-24 pb-16 text-left box-border px-4 md:pl-10 md:pr-14 text-white;
+}
+
+.section {
+  @apply space-y-4 w-full text-left max-w-2xl;
+}
+
+.sectionHeading {
+  @apply text-xl font-semibold text-[var(--text-h)] text-left tracking-wide uppercase text-[var(--accent)];
+}
+
+.bodyText {
+  @apply leading-relaxed text-zinc-200 text-left text-[16px] font-light opacity-90;
+}
+
+.highlight {
+  @apply font-medium text-[var(--accent)] opacity-100;
+}
+
+.timelineContainer {
+  @apply border-l-2 border-[var(--border)] pl-5 space-y-4 text-left w-full transition-all duration-300 hover:border-[var(--accent)];
+}
+
+.timelineDate {
+  @apply text-xs font-mono text-[var(--accent)] block text-left uppercase tracking-wider font-semibold;
+}
+
+.itemHeading {
+  @apply text-lg font-semibold text-[var(--text-h)] text-left text-white;
+}
+
+.companyName {
+  @apply text-[var(--accent)] font-medium;
+}
+
+.badgeContainer {
+  @apply flex flex-wrap gap-2 mt-3 text-left;
+}
+
+.badgeContainer code {
+  @apply px-3 py-1 text-[11px] font-mono font-medium rounded-md bg-white/5 border border-white/10 text-zinc-300 transition-colors duration-200 hover:bg-[var(--accent-bg)] hover:text-[var(--accent)] hover:border-[var(--accent-border)];
+}
